@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<main>
+<h1>IP Validation</h1>
+<p>This is a programm, that identify valid IPv4 addresses in dot-decimal format. 
+IPs should be considered valid if they consist of four octets, with values between 0 and 255, inclusive.</p>
+<h2>Valid inputs examples:</h2>
+<div class="code">
+Examples of valid IPs:<br>
+1.2.3.4<br>
+123.45.67.89<br>
+</div>
+<h2>Invalid input examples:</h2>
+<div class="code">
+Examples of invalid IPs:<br>
+1.2.3<br>
+1.2.3.4.5<br>
+123.456.78.90<br>
+123.045.067.089<br>
+</div>
+<br>
+<div class="input">
+<input id="ip" type="text" placeholder="127.0.0.1">
+<input id="button" type="button" value="check" onclick=isValidIP()>
+<p id="result">&nbsp</p>
+</div>
+</main>
+</body>
+</html>
